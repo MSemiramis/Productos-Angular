@@ -1,0 +1,8 @@
+<p class="text-center">Carrito de Compras</p>
+<div class="list-group">
+<ul class="list-group-item list-group-item-action active" aria-current="true">
+    <div *ngFor= "let producto of listaCompra$ | async">
+        {{producto.nombre}} : {{producto.cantidad}}
+    </div>
+</ul>
+</div>
